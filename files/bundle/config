@@ -1,5 +1,5 @@
 ---
 BUNDLE_PATH: ~/local/bundle
 BUNDLE_DISABLE_SHARED_GEMS: true
-BUNDLE_BIN: ~/local//bundle/.bin
+BUNDLE_BIN: ~/local/bundle/.bin
 BUNDLE_BUILD__LIBXML-RUBY: "--with-xml2-config=/data/bin/xml2-config --with-xml2-dir=/data --with-xml2-lib=/data/lib --with-xml2-include=/data/include"
