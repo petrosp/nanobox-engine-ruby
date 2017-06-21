@@ -77,6 +77,24 @@ bundle_install() {
   fi
 }
 
+## START - most possibly failed attempt to have bundle folder outside of the container
+
+# move bundle folder elsewhere
+move_vendor_bundle_from_here_to_elsewhere() {
+  if [[ -d vendor/bundle ]]; then
+    mv bundle/vendor ..
+  fi
+}
+
+# move bundle folder here
+move_vendor_bundle_from_elsewhere_to_here() {
+  if [[ -d ../vendor/bundle ]]; then
+    mv ../bundle/vendor bundle
+  fi  
+}
+
+## END - most possibly failed attempt to have bundle folder outside of the container
+
 # Clean the bundle to remove any unecessary gems
 bundle_clean() {
   if [[ -f $(nos_code_dir)/Gemfile ]]; then

@@ -17,8 +17,16 @@ install_runtime_packages
 # Configure bundler to install into vendor folder
 set_bundle_config
 
+# move bundle here if exists
+move_vendor_bundle_from_elsewhere_to_here
+
 # Run the bundle install
 bundle_install
+
+# move bundle from here if exists
+move_vendor_bundle_from_here_to_elsewhere
+
+# move bundle 
 
 # Clean old things out of the bundle
 bundle_clean
